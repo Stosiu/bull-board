@@ -112,7 +112,10 @@ tokens are the core surface and interaction set (`background`, `foreground`, `ca
 `sidebar-accent`, `sidebar-accent-foreground`, `sidebar-border`, `sidebar-ring`),
 the chart ramp (`chart-1` through `chart-5`), and the job status colours
 (`status-failed`, `status-completed`, `status-waiting`, `status-waiting-children`,
-`status-prioritized`, `status-active`, `status-delayed`, `status-paused`).
+`status-prioritized`, `status-active`, `status-delayed`, `status-paused`). There are
+also the shadow tokens (`shadow-sm`, small controls and chart tooltips; `shadow-md`,
+popups and dropdowns; `shadow-lg`, raised cards) and the overlay token (`overlay`,
+the tint behind an open modal).
 
 Values are plain CSS values. Unknown token names and values containing `;`, `{`, `}`, `<`
 or `>` are dropped, so a theme can never inject arbitrary CSS or markup into the page.

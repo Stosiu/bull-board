@@ -43,6 +43,15 @@ describe('buildThemeOverridesCss', () => {
     expect(css).toContain("--font-mono: 'Fira Code', monospace;");
   });
 
+  it('accepts the shadow and overlay tokens', () => {
+    const css = buildThemeOverridesCss({
+      light: { 'shadow-md': '0 1px 2px rgb(0 0 0 / 0.1)', overlay: 'rgb(0 0 0 / 0.5)' },
+    });
+
+    expect(css).toContain('--shadow-md: 0 1px 2px rgb(0 0 0 / 0.1);');
+    expect(css).toContain('--overlay: rgb(0 0 0 / 0.5);');
+  });
+
   it('drops unknown token names', () => {
     const css = buildThemeOverridesCss({
       light: { 'not-a-token': 'red', primary: 'teal' } as any,

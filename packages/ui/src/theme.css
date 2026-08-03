@@ -23,6 +23,12 @@
   --radius-sm: calc(var(--radius) - 2px);
   --radius-lg: calc(var(--radius) + 4px);
 
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.12);
+  --shadow-md: 0 4px 8px -4px rgb(0 0 0 / 0.1), 0 10px 24px -6px rgb(0 0 0 / 0.16);
+  --shadow-lg: 0 8px 16px -10px rgb(0 0 0 / 0.25);
+  --overlay: rgb(0 0 0 / 0.5);
+
   /* Core surfaces */
   --background: #f3f5f7;
   --foreground: #20262c;
@@ -107,6 +113,12 @@
 }
 
 .dark-mode {
+  /* Shadows: deeper and less diffuse than light mode, or they vanish against dark surfaces. */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 8px -4px rgb(0 0 0 / 0.45), 0 10px 24px -6px rgb(0 0 0 / 0.55);
+  --shadow-lg: 0 8px 16px -10px rgb(0 0 0 / 0.6);
+  --overlay: rgb(0 0 0 / 0.7);
+
   /* Core surfaces */
   --background: #151a21;
   --foreground: #d5dce4;

@@ -36,7 +36,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 0.4rem 0.55rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  box-shadow: var(--shadow-sm);
   white-space: nowrap;
   font-size: 0.72rem;
 }
